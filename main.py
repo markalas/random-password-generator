@@ -42,8 +42,7 @@ def generate_password():
     string_specials = '!@%/()=?+.-'
     string_pool = string_specials + string.ascii_letters + string.digits
     pw_length = len_pass
-
-  
+    
     pw = ''.join(random.choice(string_pool + string_specials) for i in range(pw_length))
 
     return pw
